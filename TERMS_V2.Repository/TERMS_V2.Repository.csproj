@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.6" />
+    <PackageReference Include="MySql.Data" Version="8.0.17" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.31" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TERMS_V2.Domain\TERMS_V2.Domain.csproj" />
+    <ProjectReference Include="..\TERMS_V2.Infrastructure\TERMS_V2.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Apply\" />
+    <Folder Include="Approve\" />
+    <Folder Include="BaseDictionary\" />
+    <Folder Include="Document\" />
+    <Folder Include="Follow\" />
+    <Folder Include="Log\" />
+    <Folder Include="Scheme\" />
+    <Folder Include="Tag\" />
+  </ItemGroup>
+
+</Project>
