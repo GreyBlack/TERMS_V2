@@ -58,7 +58,7 @@ const router = new Router({
             },
             {
               path: "/apply/search",
-              name: "search",
+              name: "apply-search",
               component: () =>
                 import(/* webpackChunkName: "apply" */ "./views/Apply/Search")
             },
@@ -95,13 +95,19 @@ const router = new Router({
             },
             {
               path: "/search/advance",
-              name: "history",
+              name: "advance",
               component: () =>
                 import(
                   /* webpackChunkName: "search" */ "./views/Search/Advance"
                 )
             }
           ]
+        },
+        {
+          path: "/print/list",
+          name: "print",
+          component: () =>
+            import(/* webpackChunkName: "print" */ "./views/Print/List")
         }
       ]
     }

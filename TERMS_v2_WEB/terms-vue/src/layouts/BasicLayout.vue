@@ -18,9 +18,7 @@
           <a-breadcrumb-item>User</a-breadcrumb-item>
           <a-breadcrumb-item>Bill</a-breadcrumb-item>
         </a-breadcrumb>
-        <div
-          :style="{ padding: '24px', background: '#fff', minHeight: '360px' }"
-        >
+        <div class="layout-content">
           <router-view></router-view>
         </div>
       </a-layout-content>
@@ -44,10 +42,13 @@ export default {
 </script>
 
 <style scoped>
+.layout-content {
+}
 .trigger {
   padding: 0 20px;
   line-height: 64px;
   font-size: 20px;
+  cursor: pointer;
 }
 .trigger:hover {
   background: #eeeeee;
